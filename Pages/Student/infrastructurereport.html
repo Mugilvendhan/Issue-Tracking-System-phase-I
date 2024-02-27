@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/Student/infrastructurereport.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_left">
+          <div class="logo"><a href="/index.html"><i class="uil uil-bug"></i></a></div>
+          <div class="title">COLLEGE ISSUE TRACKER</div>
+        </div>
+        <div class="nav_links">
+          <ul>
+            <a href="/Pages/Student/studenthome.html"><li>Home</li></a>
+            <a href=""><li>Task</li></a>
+          </ul>
+          <div class="profile" id="profile"></div>
+          <div class="nav_dropdown" id="dropdown">
+              <ul>
+                  <a href="/Pages/Student/studentprofile.html"><li>My Profile</li></a>
+                  <a href="/Pages/Student/studentfeedback.html"><li>Feedback</li></a>
+                  <a href="/Pages/Student/notificationandalerts.html"><li>Notification</li></a>
+                  <a href="/Pages/studentlogin.html"><li>Logout</li></a>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="main">
+        <div class="leftsidebar">
+          <div class="Issues">
+            <div class="Aclogo"><i class="uil uil-book-open"></i></div>
+            <a href="/Pages/Student/academicissues.html">Academic Issues</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-building"></i></div>
+            <a href="/Pages/Student/intrastructureissues.html">Infrastructure Issues</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-clipboard-alt"></i></div>
+            <a href="/Pages/Student/administratorissues.html">Administrative Issues</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-schedule"></i></div>
+            <a href="/Pages/Student/projectissues.html">Project and Assignment Issues</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-comment-alt-dots"></i></div>
+            <a href="/Pages/Student/collaborationandcomms.html">Collaboration and Communication</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-bell"></i></div>
+            <a href="/Pages/Student/notificationandalerts.html">Notification and alerts</a>
+          </div>
+        </div>
+        <div class="rightside">
+          <div class="form">
+            <form action="/Pages/Student/studentreport.html" method="post">
+                <h1>Report on Infrastructure Issues</h1>
+                <label for="name">Name</label>
+                <input type="text" class="formcontrol" id="name" name="name" placeholder="Enter your Name" required>
+                <label for="class">Class</label>
+                <input type="text" class="formcontrol" id="class" name="class" placeholder="Enter your Class" required>
+                <label for="issuefaced">Issue facing on</label>
+                <select class="formcontrol" id="issuefaced" name="issuefaced" required>
+                  <option value="" selected>Select option</option>
+                  <option value="Maintanence">Maintanence</option>
+                  <option value="Laboratory">Laboratory</option>
+                  <option value="Equipment">Equipment</option>
+                  <option value="Facilities">Facilities</option>
+                </select>
+                <label for="Describeissue">Describe your issue</label>
+                <textarea class="formcontrol" rows="4" cols="50" name="comment" id="Describeissue" placeholder="Describe your issue" required></textarea>
+                <label for="Attachments">Attachments</label>
+                <input type="file" class="formcontrol" id="Attachments" name="Attachments" multiple required>
+                <label for="priority">Select Priority</label>
+                <select class="formcontrol" id="priority" name="priority" required>
+                  <option value="" selected>Select option</option>
+                  <option value="High">High</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Low">Low</option>
+                </select>
+                <label for="date">Select Date</label>
+                <input type="date" class="formcontrol" id="date" name="date" required>
+               <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        
+      </section>
+      <script type="module" src="/Pages/Student/studenthome.js"></script>
+</body>
+</html>

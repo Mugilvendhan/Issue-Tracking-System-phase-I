@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/Faculty/facultyfeedback.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav_left">
+          <div class="logo"><a href="/index.html"><i class="uil uil-bug"></i></a></div>
+          <div class="title">COLLEGE ISSUE TRACKER</div>
+        </div>
+        <div class="nav_links">
+          <ul>
+            <a href="/Pages/Faculty/facultyhome.html"><li>Home</li></a>
+            <a href=""><li>Task</li></a>
+          </ul>
+          <div class="profile" id="profile"></div>
+          <div class="nav_dropdown" id="dropdown">
+              <ul>
+                <a href="/Pages/Faculty/facultyprofile.html"><li>My Profile</li></a>
+                <a href="/Pages/Faculty/facultyfeedback.html"><li>Feedback</li></a>
+                  <a href=""><li>Notification</li></a>
+                  <a href="/Pages/Faculty/facultylogin.html"><li>Logout</li></a>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="main">
+        <div class="leftsidebar">
+          <div class="Issues">
+            <div class="Aclogo"><i class="uil uil-book-open"></i></div>
+            <a href="/Pages/Student/academicissues.html">Academic Issues</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-building"></i></div>
+            <a href="/Pages/Student/intrastructureissues.html">Infrastructure Issues</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-clipboard-alt"></i></div>
+            <a href="/Pages/Student/administratorissues.html">Administrative Issues</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-schedule"></i></div>
+            <a href="">Project and Assignment Issues</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-comment-alt-dots"></i></div>
+            <a href="">Collaboration and Communication</a>
+          </div>
+          <div class="Issues">
+            <div class="Inlogo"><i class="uil uil-bell"></i></div>
+            <a href="">Notification and alerts</a>
+          </div>
+        </div>
+        <div class="rightside">
+          <div class="form">
+            <form action="/Pages/Student/studentformcomplete.html" method="post">
+                <h1>Student Feedback</h1>
+                <p>Please provide your valuable feedback</p>
+                <label for="issueraising">Face any issue while raising?</label>
+                <input type="text" class="formcontrol" id="issueraising" name="issueraising" placeholder="Write your feedback here" required>
+                <label for="issueupdation">Face any issue in updations?</label>
+                <input type="text" class="formcontrol" id="issueupdation" name="issueupdation" placeholder="Write your feedback here" required>
+                <label for="detail">Explain in detail</label>
+                <textarea class="formcontrol" rows="4" cols="50" name="detail" id="Describeissue" placeholder="Write your feedback here" required></textarea>
+                <div class="rating-box">
+                  <h2>How was your experience?</h2>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+               <button type="submit">Submit</button>
+            </form>
+          </div>
+      </section>
+
+      <script type="module" src="/Pages/Student/studenthome.js"></script>
+</body>
+</html>
